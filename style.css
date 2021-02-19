@@ -1,0 +1,28 @@
+.flex-center-vertically {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  main {
+      height: 100vh;
+  }
+
+  #inhalt {
+      max-height: 100vh;
+      min-height: 100vh;
+  }
+
+  #willkommen {
+      height: 20vh;
+      color: white;
+      font-size: 4rem;
+      font-family:  monospace;
+      border: solid;
+      border-color: white;
+  }
+
+  #anleitung {
+      font-size: 1rem;
+  }
