@@ -9,50 +9,15 @@ let gestartet = false;
 
 // CHANGE THE CONTENT BETWEEN THE ARROWS
 
-let seite1 = ` <div class="row">
-<div class="col s12">
-  <div class="card">
-    <div class="card-image">
-      <img src="https://materializecss.com/images/sample-1.jpg">
-      <span class="card-title">Card Title</span>
-    </div>
-    <div class="card-content">
-      <p>I am a very simple card. I am good at containing small bits of information.
-      I am convenient because I require little markup to use effectively.</p>
-    </div>
-    <div class="card-action">
-      <a href="#">This is a link</a>
-    </div>
-  </div>
-</div>
-</div>`;
+let seite1 = `<div id="willkommen" class="flex-center-vertically">Seite 1<br><span id="anleitung">Navigiere mit A oder D durch die Webseite</div>`;
 
-let seite2 = `<div class="row">
-              <div class="col s12" ><div class="collection">
-              <a href="#!" class="collection-item">Alvin</a>
-              <a href="#!" class="collection-item active">Alvin</a>
-              <a href="#!" class="collection-item">Alvin</a>
-              <a href="#!" class="collection-item">Alvin</a>
-            </div>
-              </div>`;
+let seite2 = `<div id="willkommen" class="flex-center-vertically">Seite 2<br><span id="anleitung">Navigiere mit A oder D durch die Webseite</div>`;
 
-let seite3 = `<div class="row">
-              <div class="col s12 center red" ><h1>Seite 3</h1></div>
-              <div class="col s12 center blue" >Veroeffentliche hier deinen Inhalt</div>
-              <div class="col s12 center wgite" >Denk dran, nutze MaterializeCSS</div>
-              </div>`;
+let seite3 = `<div id="willkommen" class="flex-center-vertically">Seite 3<br><span id="anleitung">Navigiere mit A oder D durch die Webseite</div>`;
 
-let seite4 = `<div class="row">
-              <div class="col s12 center red" ><h1>Seite 4</h1></div>
-              <div class="col s12 center blue" >Veroeffentliche hier deinen Inhalt</div>
-              <div class="col s12 center wgite" >Denk dran, nutze MaterializeCSS</div>
-              </div>`;
+let seite4 = `<div id="willkommen" class="flex-center-vertically">Seite 4<br><span id="anleitung">Navigiere mit A oder D durch die Webseite</div>`;
 
-let seite5 = `<div class="row">
-              <div class="col s12 center red" ><h1>Seite 5</h1></div>
-              <div class="col s12 center blue" >Veroeffentliche hier deinen Inhalt</div>
-              <div class="col s12 center wgite" >Denk dran, nutze MaterializeCSS</div>
-              </div>`;
+let seite5 = `<div id="willkommen" class="flex-center-vertically">Seite 5<br><span id="anleitung">Navigiere mit A oder D durch die Webseite</div>`;
 
 document.addEventListener('DOMContentLoaded', function() {
   seitenCheck(aktuelleSeite);
@@ -77,7 +42,8 @@ function seitenCheck(aktuelleSeite) {
   switch (aktuelleSeite) {
     case "seite1":
       inhaltContainer.innerHTML = seite1;
-      destroyStartseite();
+      // Einblenden, wenn der INhalt der Seiten 1 bis 5 oben angezeigt werden soll.
+      // destroyStartseite();
       break;
     case "seite2":
       inhaltContainer.innerHTML = seite2;
